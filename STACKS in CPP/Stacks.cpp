@@ -15,17 +15,17 @@ using namespace std;
     // implement with array 
     class Stack
     {
-    int *arr;
-    int size;
-    int top;
-
+    int *arr , size , top;
     public : 
+
+    bool flag;
     // creating constructor
     Stack(int s)
     {
         size = s;
         top = -1;
         arr = new int[s];
+        flag = 1;
     }
 
     // push 
@@ -46,6 +46,7 @@ using namespace std;
             top++;
             arr[top] = value;
             cout<<"Pushed "<< value<<" into the Stack"<<endl;
+            flag = 0;
         }
     }
     // pop  
@@ -59,7 +60,8 @@ using namespace std;
         {
             cout<<"Popped "<<arr[top]<<" from the stack\n";
             top--;
-            // cout<<"Popped"<<arr[top+1]<<"from the stack\n" // this is also valid but top + 1 imp
+            if(top == -1) 
+            flag = 1;                                                         // cout<<"Popped"<<arr[top+1]<<"from the stack\n" // this is also valid but top + 1 imp
         }
     }
 
@@ -69,7 +71,7 @@ using namespace std;
      {
         if(top==-1)
         {
-            cout<<"Stack is Empty";
+            cout<<"Stack is Empty"<<endl;
             return -1;
         }
         else
@@ -93,20 +95,14 @@ int main()
 {
     Stack s(5);
 
-    s.push(5);
-    s.push(4);
-    s.push(8);
-    s.push(7);
-    s.push(9);
-
-    s.pop();
-    s.pop();
     cout<<s.peek()<<endl;
-    s.pop();
-    cout<<s.peek()<<endl;
+    // s.push(-1);
 
-    cout<<s.IsEmpty()<<endl;
-    cout<<s.IsSize()<<endl;
+    // cout<<s.peek()<<endl;
 
+    int value = s.peek();
+    if(s.flag == 0){
+        cout<<value<<endl;
+    }
     return 0;
 }
