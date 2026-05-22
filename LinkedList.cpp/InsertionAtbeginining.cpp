@@ -40,3 +40,43 @@
 
 //     return 0;
 // }
+
+
+
+#include <iostream>
+using namespace std;
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int value) {
+        data = value;
+        next = NULL;
+    }
+};
+
+int main() {
+    Node* head = NULL;
+    int n, value;
+
+    cout << "How many nodes? ";
+    cin >> n;
+
+    for (int i = 0; i < n; i++) {
+        cout << "Enter value: ";
+        cin >> value;
+
+        Node* temp = new Node{120,20,30};
+        temp->next = head;
+        head = temp;
+    }
+
+    cout << "Linked List: ";
+    while (head != NULL) {
+        cout << head->data << " ";
+        head = head->next;
+    }
+
+    return 0;
+}
