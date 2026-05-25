@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // #include<iostream>
 // #include<strings.h>
 // using namespace std;
@@ -26,8 +26,6 @@ int main(){
     // name.length();
     cout<<"Length of the name is : "<<String.length();
     // string.append("happy")
-
-
 
 
     return 0;

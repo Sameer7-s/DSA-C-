@@ -150,17 +150,39 @@
 // }
 
 
-#include<iostream>
-#include<vector>
-#include<string>
-#include<algorithm>
-using namespace std;
-int main(){
+// sorting a string with O(n) TC
 
-    string name = "abchpqrta";
-   
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
+// int main() {
+//     string s;
+//     cin >> s;
 
-    return 0;
-}
+//     int n = s.size();
+//     int count[26];
 
+//     // initialize frequency array
+//     for (int i = 0; i < 26; i++) {
+//         count[i] = 0;
+//     }
+
+//     // count frequency of each character
+//     for (int i = 0; i < n; i++) {
+//         int index = s[i] - 'a';
+//         count[index]++;
+//     }
+
+//     // print characters in sorted order
+//     for (int i = 0; i < 26; i++) {
+//         for (int j = 0; j < count[i]; j++) {
+//             char c = 'a' + i;   // fixed: char, not chat
+//             cout << c;
+//         }
+//     }
+
+//     return 0;
+// }
+
+ 

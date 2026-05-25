@@ -151,7 +151,7 @@ int main() {
 //     cout << "reversed string = " << rev;
 // }
 
-
+ 
 
 #include<iostream>
 using namespace std;
@@ -172,8 +172,7 @@ int main() {
     for(int i = length - 1; i >= 0; i--) {
         cout << str[i];
     }
-    
 
     return 0;
->>>>>>> 7a976aa16ec962f49479e17db0de94cdc8bd7abd
+
 }
