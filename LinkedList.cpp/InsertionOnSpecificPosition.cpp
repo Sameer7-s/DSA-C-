@@ -74,44 +74,44 @@
 
 // // without recursion 
 
-// #include<iostream>
-// using namespace std;
-// class Node {
-// public:
-//     int data;
-//     Node* next;
-//     Node(int value) {
-//         data = value;
-//         next = NULL;
-//     }
-// };
-// int main() {
-//     int arr[] = {2, 4, 6, 8, 10};
-//     Node *Head = NULL, *Tail = NULL;
-//     // Create linked list
-//     for(int i = 0; i < 5; i++) {
-//         Node* temp = new Node(arr[i]);
+#include<iostream>
+using namespace std;
+class Node {
+public:
+    int data;
+    Node* next;
+    Node(int value) {
+        data = value;
+        next = NULL;
+    }
+};
+int main() {
+    int arr[] = {2, 4, 6, 8, 10};
+    Node *Head = NULL, *Tail = NULL;
+    // Create linked list
+    for(int i = 0; i < 5; i++) {
+        Node* temp = new Node(arr[i]);
 
-//         if(Head == NULL)
-//             Head = Tail = temp;
-//         else {
-//             Tail->next = temp;
-//             Tail = temp;
-//         }
-//     }
-//     int pos = 2 ,  value = 23;
-//     Node* temp = Head;
-//     while(pos--) {
-//         temp = temp->next;
-//     }
-//     Node* newNode = new Node(value);
-//     newNode->next = temp->next;
-//     temp->next = newNode;
-//     // Display
-//     temp = Head;
-//     while(temp != NULL) {
-//         cout << temp->data << " ";
-//         temp = temp->next;
-//     }
-// }
+        if(Head == NULL)
+            Head = Tail = temp;
+        else {
+            Tail->next = temp;
+            Tail = temp;
+        }
+    }
+    int pos = 2 ,  value = 23; 
+    Node* temp = Head;
+    while(pos--) {
+        temp = temp->next;
+    }
+    Node* newNode = new Node(value);
+    newNode->next = temp->next;
+    temp->next = newNode;
+    // Display
+    temp = Head;
+    while(temp != NULL) {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+}
 
