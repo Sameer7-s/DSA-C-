@@ -12,15 +12,18 @@
 // }
 #include<iostream>
 using namespace std;
+int main()
+{
 
-int main(){
+    string str = "Hello ";
+    int len = 0;
 
-    string s = "HEllo sam ";
-
-    int length = 0;
-    for(int i = 0;i<s[i] != '\0';i++){
-        length++;
+    for(int i = 0;str[i] != '\0';i++){
+        len++;
     }
-    cout<<"Length of string : "<<length<<endl;
-    
+
+    cout<<"Length of string : "<<len<<" ";
+
+
+    return 0;
 }

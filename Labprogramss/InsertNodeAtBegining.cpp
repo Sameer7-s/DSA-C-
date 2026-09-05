@@ -44,7 +44,6 @@ class Node{
         next = NULL;
     }
 };
-
 int main(){
     Node *head = new Node(10);
     Node *temp = new Node(20);
@@ -56,6 +55,5 @@ int main(){
         cout<<head->data<<" ";
         head = head->next;
     }
-    
     return 0;
 }

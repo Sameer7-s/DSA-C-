@@ -35,23 +35,23 @@ f
 // }
 
 
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class Node{
-//     public:
-//     int data;
-//     Node *next;
-//     //constructor 
-//     Node(int value ,Node* add){
-//         data = value;
-//         next = add;
-//     }
-// };
+class Node{
+    public:
+    int data;
+    Node *next;
+    //constructor 
+    Node(int value ,Node* add){
+        data = value;
+        next = add;
+    }
+};
 
-// int main(){
-//     Node *head = new Node(10 , NULL);/ / store in memory in heap
-//     cout<<head->data<<" ";
+int main(){
+    Node *head = new Node(10 , NULL);// store in memory in heap
+    cout<<head->data<<" ";
 
-// }
+}
 

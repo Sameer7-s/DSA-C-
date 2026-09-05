@@ -1,12 +1,11 @@
 // DSA LINKED LIST INSERTING AT BEGINING
-
-#include<iostream>using namespace std;
+#include<iostream>
+using namespace std;
 class Node{
     public:
     int data;
     Node *next;
-    Node(int value)
-    {
+    Node(int value) {
         data = value;
         next = NULL;
     }
@@ -19,20 +18,27 @@ int main(){
         if(!Head){
             Head = new Node(arr[i]);
         }  
-        else{
+        else{   
+        
             Node *temp = new Node(arr[i]);
             temp->next = Head;
             Head = temp;
         }
     }
     Node *temp = Head;
-
     while(temp){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
 }
+#include<iostream>
+using namespace std; 
+int main(){
 
+
+
+    return 0;
+}
 
 
 

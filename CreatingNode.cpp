@@ -15,7 +15,6 @@ class Node
 int main(){
     int arr[5] = {10,12,15,20,11};
     Node *Head  = NULL , *Tail = NULL; 
-
     // create first node 
     for(int i = 0;i<5;i++){
         if(!Head){// first node creation
@@ -35,15 +34,11 @@ int main(){
 
 // traverse the linked list 
     Tail = Head;
-
     while(Tail!=NULL){
         cout<<Tail->data<<" ";
         Tail = Tail->next;
     }
-
-
-
-    return 0;
+      return 0;
 }
 
 
